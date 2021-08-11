@@ -1,0 +1,58 @@
+/* универсальный
+селектор тега
+селектор id
+селектор класса
+селектор атрибута
+селектор потомка
+селектор ребенка */
+body {
+    font-size: 25px;
+    color: coral;
+}
+/* 1 */
+/* * {
+    color: teal;
+} */
+/* 11 */
+ul .link {
+    color: inherit;
+}
+/* 1 */
+/* a {
+    color: plum;
+} */
+
+/* 100 */
+/* #link {
+    color: yellowgreen;
+} */
+/* 10 */
+/* [href="https://www.google.com.ua/"]
+{
+    color: brown;
+} */
+
+/* :hover
+:focus
+:visited
+:active
+ */
+
+/* .link:hover, */
+
+/* .link:hover {
+    background-color: blueviolet;
+} */
+
+ul .link:visited {
+    color: black;
+}
+
+ul .link:active {
+    color: black;
+}
+
+p::selection {
+    color: brown;
+    background-color: cyan;
+}
