@@ -1,0 +1,31 @@
+.wrap {
+    width: 800px;
+    min-height: 400px;
+    margin: 0 auto;
+    outline: 1px solid #000;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    color: blanchedalmond;
+    font-family: sans-serif;
+    font-size: 50px;
+    border: 1px solid #999999;
+}
+
+.first {
+    background-color: blueviolet;
+}
+
+.second {
+    background-color: crimson;
+}
+
+.third {
+    background-color: darkgreen;
+}
+
+.fourth {
+    background-color: goldenrod;
+}
