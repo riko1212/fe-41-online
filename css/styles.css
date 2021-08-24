@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 10px dashed rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    background: brown;
+    background: url(https://picsum.photos/id/237/200/300) no-repeat center cover;
+
+    background-size: auto;
+}
+
+/* .savanna {
+    height: 800px;
+    background-image: url(../img/elephant.png), url(../img/giraffe.png),
+        url(../img/lion.png), url(../img/hepard.png),
+        url(../img/savanna-derevo-solnce-zakat.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right, bottom 20px left 600px,
+        bottom 20px left 1000px, bottom 20px left 1500px, center bottom;
+    background-size: auto, auto, auto, 300px, auto;
+} */
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* .linear,
+.radial {
+    height: 400px;
+} */
+
+/* .linear {
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/african-savannah-grass-acacia-baobab-260nw-1103717600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.radial {
+    background-image: radial-gradient(
+        circle at center,
+        yellow 40%,
+        blue 40% 80%,
+        green 80% 100%
+    );
+} */
+
+/* .title {
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+} */
+
+/* .title::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/elephant.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+} */
+
+/* .title::after {
+    content: "";
+    width: 200px;
+    height: 5px;
+    background-color: violet;
+    margin-top: 10px;
+} */
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    margin: 0 auto;
+    box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
