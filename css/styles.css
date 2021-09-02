@@ -1,7 +1,4 @@
-body {
-    position: relative;
-}
-.wrapper {
+/* .wrapper {
     width: 1000px;
     margin: 0 auto;
     outline: 1px solid tomato;
@@ -42,4 +39,46 @@ body {
     background-color: blue;
     width: 80px;
     height: 80px;
+} */
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.wrapper {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    outline: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: gray;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-duration: 2000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-fill-mode: backwards;
+}
+
+.block:hover {
+    animation-play-state: paused;
 }
