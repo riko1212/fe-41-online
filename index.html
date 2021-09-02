@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -21,7 +23,7 @@
     <header class="header">
         <div class="container">
             <nav class="header-navigation">
-                <a href="" class="header-logo">
+                <a href="" class="header-logo  animate__animated animate__wobble animate__infinite	infinite">
                     <svg class="logo-icon" width="66" height="55">
                         <use href="./images/sprite.svg#icon-logo"></use>
                     </svg>
@@ -43,21 +45,24 @@
             </nav>
             <div class="header-right">
                 <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-                <button class="header-button btn" type="button">онлайн-запись</button>
+                <button class="header-button btn" type="button" data-modal-open>онлайн-запись</button>
             </div>
         </div>
     </header>
     <main>
         <section class="hero">
             <div class="container hero-container">
-                <ul class="hero-list list">
-                    <li class="hero-item">
-                        <a class="hero-item-link link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
-                    </li>
-                    <li class="hero-item">
-                        <a class="hero-item-link link" href="" target="_blank" rel="noopener noreferrer">Youtube</a>
-                    </li>
-                </ul>
+                <div class="hero-left">
+                    <ul class="hero-list list">
+                        <li class="hero-item">
+                            <a class="hero-item-link link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        </li>
+                        <li class="hero-item">
+                            <a class="hero-item-link link" href="" target="_blank" rel="noopener noreferrer">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+                
                 <div class="hero-main">
                     <p lang="en" class="hero-pre-text pre-text">A hair salon for men in Kyiv</p>
                     <h1 class="hero-title" lang="en">BarberShop</h1>
@@ -181,7 +186,14 @@
                 <h2 class="masters-title section-title">Наши мастера</h2>
                 <ul class="masters-list list">
                     <li class="masters-item item-one">
-                        <img src="./images/masters/masters-img1.jpg" alt="Барбер стрижет" width="370" height="346" />
+                        <div class="masters-overlay">
+                            <img src="./images/masters/masters-img1.jpg" alt="Барбер стрижет" width="370" height="346" />
+                            <p class="masters-top-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur quod ab magni molestiae, ad odit facilis, velit, numquam impedit iure dolor! Minima aut quam, officiis omnis illum aliquid explicabo corrupti fuga. Ipsa optio ab fugiat culpa, accusantium tempore incidunt. Architecto.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur quod ab magni molestiae, ad odit facilis, velit,
+                                numquam impedit iure dolor! Minima aut quam, officiis omnis illum aliquid explicabo corrupti fuga. Ipsa optio ab fugiat
+                                culpa, accusantium tempore incidunt. Architecto.
+                            </p>
+                        </div>
                         <div class="masters-item-content">
                             <h3 class="masters-item-title" lang="en">John Smith</h3>
                             <p class="masters-item-text" lang="en">Extreme Barber</p>
@@ -350,6 +362,12 @@
             </li>
         </ul>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="btn-open" data-modal-close>X</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
