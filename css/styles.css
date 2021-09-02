@@ -1,3 +1,37 @@
+@keyframes rotator {
+    0% {
+        transform: rotate(0deg);
+        border-radius: 0;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        border-radius: 50%;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        border-radius: 0;
+    }
+}
+
+@keyframes translator {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(300px);
+    }
+
+    75% {
+        transform: translate(-300px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
 /* .wrapper {
     width: 1000px;
     margin: 0 auto;
@@ -41,15 +75,6 @@
     height: 80px;
 } */
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 .wrapper {
     width: 800px;
     height: 500px;
@@ -70,13 +95,14 @@
     text-transform: uppercase;
     color: #ffffff;
     background-color: gray;
-    animation-name: rotate;
+    /* animation-name: rotator;
     animation-timing-function: linear;
-    animation-duration: 2000ms;
+    animation-duration: 4000ms;
     animation-delay: 0ms;
-    animation-iteration-count: infinite;
-    animation-direction: reverse;
-    animation-fill-mode: backwards;
+    animation-iteration-count: 2;
+    animation-direction: normal; */
+    /* animation-fill-mode: forwards; */
+    animation: rotator 4000ms linear 0ms, translator 4000ms linear 0ms;
 }
 
 .block:hover {
