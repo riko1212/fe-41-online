@@ -33,12 +33,12 @@
     margin: 0 auto;
 }
 
-/* .linear,
+.linear,
 .radial {
-    height: 400px;
-} */
+    height: 100px;
+}
 
-/* .linear {
+.linear {
     background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
@@ -52,12 +52,16 @@
 
 .radial {
     background-image: radial-gradient(
-        circle at center,
-        yellow 40%,
-        blue 40% 80%,
-        green 80% 100%
-    );
-} */
+            circle at top right,
+            yellow 15%,
+            blue 15% 100%
+        ),
+        radial-gradient(circle at top center, green 15%, blue 15% 100%);
+    background-size: 50%, 50%;
+}
+
+.radial {
+}
 
 /* .title {
     text-align: center;
@@ -85,10 +89,10 @@
     margin-top: 10px;
 } */
 
-.box {
+/* .box {
     width: 200px;
     height: 200px;
     background-color: tomato;
     margin: 0 auto;
     box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
-}
+} */
