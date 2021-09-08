@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.contact-form {
+    width: 600px;
+    min-height: 300px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.form-input,
+.form-select {
+    width: 100%;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.form-input::placeholder {
+    color: tomato;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-text {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 10px 15px;
+}
+.form-text::placeholder {
+    color: tomato;
+}

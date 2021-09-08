@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <form action="#" class="contact-form" method="GET">
+        <label for="input-mail">Введите почту</label>
+        <label>
+            Введите имя
+            <input type="text" minlength="2" name="name" class="form-input" placeholder="John" required>
+        </label>
+        <label>
+            Введите телефон
+        <input type="tel" name="tel" value="+3"  class="form-input" required>
+        </label>
+        <!-- <label>
+            Введите почту -->
+        <input type="email" id="input-mail" name="email" class="form-input" placeholder="John@mail">
+        <!-- </label> -->
+        <fieldset class="form-group">
+            <legend>Gender</legend>
+            <div>
+
+                <input type="radio" name="gender" id="radio-man" value="man">
+                <label for="radio-man">Man</label>
+            </div>
+            <div>
+                
+                <input type="radio" name="gender" id="radio-woman" value="woman">
+                <label for="radio-woman">Woman</label>
+            </div>
+        </fieldset>
+        <fieldset class="form-group">
+            <legend>Hobby</legend>
+            <label>
+                
+                <input type="checkbox" value="books" name="hobby">
+                books
+            </label>
+            <label>
+                
+                <input type="checkbox" value="movies" name="hobby" checked>
+                movies
+            </label>
+            <label>
+                
+                <input type="checkbox" value="sports" name="hobby">
+                sports
+            </label>
+        </fieldset>
+        <label for="comment">Коммент</label>
+        <textarea name="comment" class="form-text" id="comment" placeholder="Коммент"></textarea>
+        <label for="form-city">Ваш город</label>
+        <select name="city" id="form-city" class="form-select">
+            <option value="" >город</option>
+            <option value="Paris">Paris</option>
+            <option value="London">London</option>
+            <option value="Lisabon">Lisabon</option>
+        </select>
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
+
+<!-- name=frefer
+&tel=ferfe&
+e-mail=ferfre# -->

@@ -1,1 +1,9 @@
-# fe-41-online
+Тэг form
+
+-   input
+-   валидацыя
+-   checkbox
+-   radio
+-   label
+-   textarea
+-   select
