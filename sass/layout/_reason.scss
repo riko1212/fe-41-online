@@ -1,0 +1,86 @@
+.reason-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reason-left,
+.reason-right {
+    /* width: calc(100% / 2 - 15px); */
+    width: calc((100% - 30px) / 2);
+}
+
+.reason-list {
+    display: flex;
+    width: 370px;
+    flex-wrap: wrap;
+    align-items: end;
+    margin: 0 auto;
+}
+
+.reason-item {
+    width: 170px;
+    background: #f7f7f7;
+    padding: 20px 24px;
+    &:nth-child(even) {
+        margin-top: 30px;
+    }
+    &:nth-child(odd) {
+        margin-right: 30px;
+    }
+}
+
+.reason-item-spec {
+    padding: 20px;
+}
+
+
+
+.reason-count {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--third-text-color);
+    display: block;
+    text-align: center;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    &::after {
+        content: "+";
+        font-size: 16px;
+        line-height: calc(22 / 16);
+        color: var(--accent-color);
+        margin-top: 5px;
+    }
+}
+
+
+
+.reason-item-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--third-text-color);
+}
+
+.reason-pre-text {
+    color: var(--third-text-color);
+    margin-bottom: 20px;
+    &::before {
+        background-color: #303030;
+    }
+}
+
+
+.reason-title {
+    color: var(--secondary-title-color);
+    margin-bottom: 20px;
+}
+
+.reason-after-text {
+    color: var(--main-text-color);
+}

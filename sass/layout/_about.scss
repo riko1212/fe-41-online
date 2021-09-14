@@ -1,0 +1,53 @@
+.about-wrap {
+    display: flex;
+}
+
+.about-list {
+    display: flex;
+    margin-right: 64px;
+}
+
+.about-item + {
+    .about-item {
+        margin-left: 30px;
+    }
+} 
+
+.about-pre-text {
+    color: var(--third-text-color);
+    margin-bottom: 20px;
+        &::before {
+        background-color: #303030;
+    }
+}
+
+
+
+.about-title {
+    color: var(--secondary-title-color);
+    margin-bottom: 20px;
+}
+
+.about-after-text {
+    color: var(--main-text-color);
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    margin-bottom: 40px;
+}
+
+.about-content {
+    max-width: 500px;
+}
+
+.about-btn {
+    &:hover,
+    &:focus {
+        color: #ffffff;
+    }
+}
