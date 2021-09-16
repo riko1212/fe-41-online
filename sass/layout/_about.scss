@@ -7,29 +7,24 @@
     margin-right: 64px;
 }
 
-.about-item + {
-    .about-item {
+.about-list__item + {
+    .about-list__item {
         margin-left: 30px;
     }
 } 
 
-.about-pre-text {
-    color: var(--third-text-color);
+.about-pre-text { 
     margin-bottom: 20px;
-        &::before {
-        background-color: #303030;
-    }
 }
 
 
 
-.about-title {
-    color: var(--secondary-title-color);
+.about-content__title {
     margin-bottom: 20px;
 }
 
 .about-after-text {
-    color: var(--main-text-color);
+
     margin-bottom: 20px;
 }
 

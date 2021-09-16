@@ -42,10 +42,10 @@
 }
 
 
-.hero-item {
+.hero-list__item {
     margin-left: 40px;
 }
-.hero-item-link {
+.hero-list__link {
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -60,16 +60,12 @@
 
 
 
-.hero-pre-text {
-    color: rgba(157, 164, 189, 0.6);
+.hero-main__pre-text {
     margin-bottom: 20px;
-    &::before {
-        background-color: rgba(157, 164, 189, 0.6);
-    }
 }
 
 
-.hero-title {
+.hero-main__title {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 72px;
@@ -77,8 +73,4 @@
     letter-spacing: 0.05em;
     color: var(--main-title-color);
     margin-bottom: 20px;
-}
-
-.hero-text {
-    color: var(--secondary-text-color);
 }

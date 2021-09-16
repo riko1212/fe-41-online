@@ -1,0 +1,23 @@
+.contacts {
+    padding-left: 100px;
+}
+.contacts-title {
+    color: var(--main-title-color);
+}
+.contacts-link,
+.contacts-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    font-style: normal;
+}
+
+.contacts-subtitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+}

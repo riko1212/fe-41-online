@@ -3,6 +3,7 @@
 @import './base/reset';
 @import './utils/hidden';
 @import './utils/animations';
+@import './utils/mixins';
 @import './base/container';
 @import './components/btn';
 @import './base/section';
@@ -17,3 +18,8 @@
 @import './layout/reason';
 @import './layout/masters';
 @import './layout/gallery';
+@import './layout/contact-wrapper';
+@import './layout/online';
+@import './layout/contacts';
+@import './layout/footer';
+@import './components/modal';

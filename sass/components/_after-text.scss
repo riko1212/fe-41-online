@@ -1,5 +1,14 @@
 .after-text {
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
+    @include font(18px, 30px, 400);
+    // font-size: 18px;
+    // line-height: 1.67;
+    // letter-spacing: 0.02em;
+}
+
+.after-text_color_light {
+    color: var(--secondary-text-color);
+}
+
+.after-text_color_dark {
+    color: var(--main-text-color);
 }

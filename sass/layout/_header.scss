@@ -13,12 +13,12 @@
     }
 } 
 
-.header-logo {
+.header__logo {
     margin-right: 70px;
     /* animation: shake 400ms linear alternate infinite forwards; */
 }
 
-.logo-icon {
+.logo__icon {
     fill: #303030;
 }
 
@@ -31,13 +31,13 @@
     display: flex;
 }
 
-.header-item {
+.header-list__item {
     &:not(:last-child) {
         margin-right: 40px;
     }
 }
 
-.header-link {
+.header-list__link {
     display: block;
     font-weight: 600;
     font-size: 12px;
@@ -61,7 +61,7 @@
     align-items: center;
 }
 
-.header-tel {
+.header-right__tel {
     display: block;
     font-weight: 600;
     font-size: 12px;
@@ -73,6 +73,6 @@
     margin-right: 40px;
 }
 
-.header-button {
+.header-right__button {
     color: #ffffff;
 }

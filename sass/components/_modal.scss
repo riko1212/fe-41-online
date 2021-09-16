@@ -1,142 +1,3 @@
-/* -----------------HEADER---------------- */
-
-/* ----------------HERO----------------------- */
-
-/* ---------------ABOUT--------------- */
-
-/* ---------------PRICES--------------- */
-
-/* ---------------REASON--------------- */
-
-/* ---------------MASTERS--------------- */
-
-/* ---------------GALLERY--------------- */
-
-.contact-wrapper {
-    background: #191c26;
-    background-image: url(../images/contacts-bg.png);
-    background-size: 50% auto;
-    background-position: right center;
-    background-repeat: no-repeat;
-}
-
-.contact-wrapper .container {
-    display: flex;
-}
-
-/* ---------------ONLINE--------------- */
-
-.online {
-    padding-right: 40px;
-    padding-bottom: 193px;
-}
-.online-title {
-    color: var(--main-title-color);
-    margin-bottom: 44px;
-}
-
-.online-input {
-    padding-bottom: 8px;
-    width: 270px;
-    border: none;
-    background: transparent;
-    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-    margin-bottom: 44px;
-    color: #ffffff;
-    outline: none;
-}
-
-.online-input:focus,
-.online-message:focus {
-    border-bottom: 1px solid #ffffff;
-}
-
-.online-input.small {
-    width: 260px;
-}
-
-.online-input:not(:last-child) {
-    margin-right: 30px;
-}
-
-.online-message {
-    width: 560px;
-    height: 76px;
-    display: block;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-    resize: none;
-    margin-bottom: 44px;
-    color: #ffffff;
-    outline: transparent;
-    transition: border-bottom 500ms linear;
-}
-
-.online-input::placeholder,
-.online-message::placeholder {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: calc(15 / 11);
-    letter-spacing: 0.1em;
-    color: rgba(157, 164, 189, 0.4);
-    transition: color 500ms linear;
-}
-
-.online-input:focus::placeholder,
-.online-message:focus::placeholder {
-    color: #ffffff;
-}
-
-.online-btn {
-    color: #ffffff;
-}
-/* ---------------CONTACTS--------------- */
-
-.contacts {
-    padding-left: 100px;
-}
-.contacts-title {
-    color: var(--main-title-color);
-}
-.contacts-link,
-.contacts-text {
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
-    font-style: normal;
-}
-
-.contacts-subtitle {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-/* ---------------FOOTER--------------- */
-.footer-text {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.2em;
-    color: var(--secondary-text-color);
-}
-
-.footer-link {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.2em;
-    color: var(--third-text-color);
-}
-
-/* -------modal ---------*/
-
 .backdrop {
     position: fixed;
     height: 100vh;
@@ -147,6 +8,11 @@
     /* display: flex;
     align-items: center;
     justify-content: center; */
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
 }
 
 .modal {
@@ -172,11 +38,6 @@
     top: 5px;
 }
 
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
 
 .modal-title {
     font-size: 18px;
@@ -225,11 +86,12 @@
     padding-left: 10px;
     padding-top: 15px;
     resize: none;
+    &::placeholder {
+        font-size: 12px;
+    }
 }
 
-.modal-comment::placeholder {
-    font-size: 12px;
-}
+
 
 .check-label {
     display: flex;
@@ -247,9 +109,14 @@
     justify-content: center;
 }
 
-.checkbox:checked + .check-label > .icon-check {
-    background: var(--accent-color);
-    border: transparent;
+.checkbox {
+    &:checked + .check-label {
+        & > .icon-check {
+            background: var(--accent-color);
+            border: transparent;
+        }
+    }
+       
 }
 
 /*  --------- Чекбокс-бифор--------- */

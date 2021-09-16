@@ -1,8 +1,5 @@
 .pre-text {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
+    @include font(11px, 15px, 600, 0.1em);
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -14,5 +11,20 @@
 
         margin-right: 21px;
     }
+    &_color_light {
+        color: rgba(157, 164, 189, 0.6);
+        &::before {
+            background-color: rgba(157, 164, 189, 0.6);
+        }
+    }
+    &_color_dark {
+        color: var(--third-text-color);
+        &::before {
+            background-color: #303030;
+        }
+
+    }
 }
+
+
 

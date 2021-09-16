@@ -1,0 +1,13 @@
+.contact-wrapper {
+    background: #191c26;
+    background-image: url(../images/contacts-bg.png);
+    background-size: 50% auto;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.contact-wrapper {
+    .container {
+        display: flex;
+    }
+} 
