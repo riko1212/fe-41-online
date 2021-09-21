@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.text {
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+@media screen and (orientation: landscape) {
+    body {
+        background-color: tomato;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        background-color: teal;
+    }
+}
+
+/* @media (min-width: 768px) and (max-width: 1199px) {
+    body {
+        background-color: teal;
+    }
+
+    .text {
+        font-size: 40px;
+    }
+} */
+
+/* @media (min-width: 1200px) {
+    body {
+        background-color: violet;
+    } */
+
+/* .text {
+        font-size: 26px;
+    } */
+/* } */
+
+/* @media (max-width: 767px) {
+    .text {
+        font-size: 26px;
+    }
+
+    body {
+        background-color: violet;
+    }
+} */
+
+/* .wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(224, 217, 217);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px solid red;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-teal {
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px solid red;
+}
+
+.item {
+    width: 48%;
+    height: 100px;
+    background-color: tomato;
+}
+
+.item-teal {
+    background-color: teal;
+}
+
+@media screen and (min-width: 320px) {
+    .container {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+    }
+} */
