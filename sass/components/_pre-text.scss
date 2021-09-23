@@ -1,16 +1,22 @@
 .pre-text {
-    @include font(11px, 15px, 600, 0.1em);
+    @include font(10px, 15px, 600, 0.1em);
     text-transform: uppercase;
     display: flex;
     align-items: center;
     &::before {
         content: "";
         display: block;
-        width: 63px;
+        width: 50px;
         height: 1px;
-
         margin-right: 21px;
+        @media screen and (min-width: 480px){
+            width: 60px;
+        }
     }
+    @media screen and (min-width: 480px){
+        @include font(11px, 15px, 600, 0.1em);
+    }
+    
     &_color_light {
         color: rgba(157, 164, 189, 0.6);
         &::before {

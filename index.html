@@ -69,7 +69,40 @@
                         онлайн-запись
                     </button>
                 </div>
+                <button class="menu-open" data-menu-open>O</button>
             </div>
+            <div class="mob-menu is-hidden" data-menu>
+                <button class="menu-close" data-menu-close>X</button>
+                <ul class="mob-menu-list list">
+                    <li class="mob-menu-list__item">
+                            <a class="mob-menu-list__link link" href="">О нас</a>
+                        </li>
+                        <li class="mob-menu-list__item">
+                            <a class="mob-menu-list__link link" href=""
+                                >Услуги и цены</a
+                            >
+                        </li>
+                        <li class="mob-menu-list__item">
+                            <a class="mob-menu-list__link link" href=""
+                                >Мастера</a
+                            >
+                        </li>
+                        <li class="mob-menu-list__item">
+                            <a class="mob-menu-list__link link" href=""
+                                >Контакты</a
+                            >
+                        </li>
+                </ul>
+                <a class="mob-menu__tel link" href="tel:+380441111111"
+                        >+38 044 111 11 11</a
+                    >
+                    <button
+                        class="mob-menu__button btn"
+                        type="button"
+                        data-modal-open
+                    >
+                        онлайн-запись
+                    </button>
         </header>
         <main>
             <section class="hero">
@@ -114,8 +147,8 @@
                                 after-text after-text_color_light
                             "
                         >
-                            Мы эксперты в модных мужских стрижках.<br />
-                            Работаем быстро, осторожно и со вкусом.
+                            Мы эксперты в модных мужских стрижках. Работаем
+                            быстро, осторожно и со вкусом.
                         </p>
                     </div>
                 </div>
@@ -124,20 +157,48 @@
                 <div class="container about-wrap">
                     <ul class="about-list list">
                         <li class="about-list__item">
-                            <img
-                                src="./images/about/about-img-1.jpg"
-                                alt="Барбер бреет бороду"
-                                width="270"
-                                height="445"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/about/about-img-1.jpg    1x,
+                                        ./images/about/about-img-1-x2.jpg 2x
+                                    "
+                                    media="(min-width:1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/about/about-img-1-tab-x1.jpg 1x,
+                                        ./images/about/about-img-1-tab-x2.jpg 2x
+                                    "
+                                    media="(min-width:768px)"
+                                />
+                                <img
+                                    src="./images/about/about-img-1.jpg"
+                                    alt="Барбер бреет бороду"
+                                />
+                            </picture>
                         </li>
                         <li class="about-list__item">
-                            <img
-                                src="./images/about/about-img-2.jpg"
-                                alt="Барбер стрижет клиента"
-                                width="270"
-                                height="445"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/about/about-img-2.jpg    1x,
+                                        ./images/about/about-img-2-x2.jpg 2x
+                                    "
+                                    media="(min-width:1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/about/about-img-2-tab-x1.jpg 1x,
+                                        ./images/about/about-img-2-tab-x2.jpg 2x
+                                    "
+                                    media="(min-width:768px)"
+                                />
+                                <img
+                                    src="./images/about/about-img-2.jpg"
+                                    alt="Барбер бреет бороду"
+                                />
+                            </picture>
                         </li>
                     </ul>
                     <div class="about-content">
@@ -175,7 +236,7 @@
                     </div>
                 </div>
             </section>
-            <section class="prices section">
+            <!-- <section class="prices section">
                 <div class="container">
                     <p class="prices-pre-text pre-text">
                         Проведи время в компании лучших мастеров
@@ -247,8 +308,8 @@
                         онлайн-запись
                     </button>
                 </div>
-            </section>
-            <section class="reason section">
+            </section> -->
+            <!-- <section class="reason section">
                 <div class="container reason-wrap">
                     <div class="reason-left">
                         <ul class="reason-list list">
@@ -291,7 +352,7 @@
                         </p>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <section class="masters section">
                 <div class="container">
                     <p class="masters-pre-text pre-text pre-text_color_dark">
@@ -575,7 +636,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="gallery section">
+            <!-- <section class="gallery section">
                 <div class="container">
                     <h2 lang="en" class="visually-hidden">Gallery</h2>
                     <p class="gallery-pre-text pre-text">
@@ -616,8 +677,8 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-            <div class="contact-wrapper">
+            </section> -->
+            <!-- <div class="contact-wrapper">
                 <div class="container">
                     <section class="online section">
                         <h2 class="online-title section-title">
@@ -680,9 +741,9 @@
                         <p class="contacts-text">Ежедневно с 9:00 до 22:00</p>
                     </section>
                 </div>
-            </div>
+            </div> -->
         </main>
-        <footer class="footer">
+        <!-- <footer class="footer">
             <p class="footer-text">&copy; Copyright 2020</p>
             <ul class="footer-list list">
                 <li class="footer-item">
@@ -704,7 +765,7 @@
                     >
                 </li>
             </ul>
-        </footer>
+        </footer> -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button" class="btn-open" data-modal-close>
@@ -802,5 +863,6 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>

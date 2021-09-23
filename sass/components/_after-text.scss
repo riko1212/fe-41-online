@@ -1,8 +1,16 @@
 .after-text {
-    @include font(18px, 30px, 400);
+    @include font(12px, 26px, 400);
     // font-size: 18px;
     // line-height: 1.67;
     // letter-spacing: 0.02em;
+    @media screen and (min-width: 480px){
+        @include font(16px, 26px, 400, 0.02em);
+        max-width: 306px;
+    }
+    @media screen and (min-width: 1200px){
+        @include font(18px, 30px, 400, 0.02em);
+        max-width: 403px;
+    }
 }
 
 .after-text_color_light {
