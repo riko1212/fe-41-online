@@ -12,54 +12,7 @@ ul {
     list-style: none;
 }
 
-.text {
-    font-size: 26px;
-    line-height: 1.2;
-}
-
-@media screen and (orientation: landscape) {
-    body {
-        background-color: tomato;
-    }
-}
-
-@media screen and (orientation: portrait) {
-    body {
-        background-color: teal;
-    }
-}
-
-/* @media (min-width: 768px) and (max-width: 1199px) {
-    body {
-        background-color: teal;
-    }
-
-    .text {
-        font-size: 40px;
-    }
-} */
-
-/* @media (min-width: 1200px) {
-    body {
-        background-color: violet;
-    } */
-
-/* .text {
-        font-size: 26px;
-    } */
-/* } */
-
-/* @media (max-width: 767px) {
-    .text {
-        font-size: 26px;
-    }
-
-    body {
-        background-color: violet;
-    }
-} */
-
-/* .wrapper {
+.wrapper {
     width: 100vw;
     height: 100vh;
     background-color: rgb(224, 217, 217);
@@ -122,4 +75,4 @@ ul {
     .container {
         width: 1440px;
     }
-} */
+}
