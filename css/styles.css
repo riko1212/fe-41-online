@@ -12,7 +12,35 @@ ul {
     list-style: none;
 }
 
-.wrapper {
+body {
+    background-color: tomato;
+}
+
+/* @media screen and (max-width: 1199px) {
+    body {
+        background-color: teal;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background-color: violet;
+    }
+} */
+
+@media (orientation: landscape) {
+    body {
+        background-color: teal;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        background-color: violet;
+    }
+}
+
+/* .wrapper {
     width: 100vw;
     height: 100vh;
     background-color: rgb(224, 217, 217);
@@ -75,4 +103,4 @@ ul {
     .container {
         width: 1440px;
     }
-}
+} */
